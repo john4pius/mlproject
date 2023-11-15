@@ -1,7 +1,10 @@
 from setuptools import find_packages,setup
+
 from typing import List
 
-hypen_e_dot='-e .'
+
+hyphen_e_dot='-e .'
+
 def get_requirements(file_path:str)->List[str]:
     '''
     this function will return the list of requirements
@@ -10,21 +13,17 @@ def get_requirements(file_path:str)->List[str]:
     with open(file_path) as file_obj:
         requirements=file_obj.readlines()
         requirements=[req.replace('\n','') for req in requirements]
-
-        if hypen_e_dot in requirements:
-            requirements.remove(hypen_e_dot)
-<<<<<<< HEAD
-=======
-    
+        if hyphen_e_dot in requirements:
+            requirements.remove(hyphen_e_dot)
     return requirements
->>>>>>> a788c13 (setup and requirement v3)
+
 
 setup(
+
     name='ML_PROJECT',
     version='0.0.1',
     author='John Pius',
     author_email='john4pius@gmail.com',
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt')
-   
 )
