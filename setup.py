@@ -3,7 +3,7 @@ from setuptools import find_packages,setup
 from typing import List
 
 
-hyphen_e_dot='-e .'
+HYPEN_E_DOT='-e .'
 
 def get_requirements(file_path:str)->List[str]:
     '''
@@ -19,8 +19,7 @@ def get_requirements(file_path:str)->List[str]:
 
 
 setup(
-
-    name='ML_PROJECT',
+    name='mlproject',
     version='0.0.1',
     author='John Pius',
     author_email='john4pius@gmail.com',
