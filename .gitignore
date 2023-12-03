@@ -102,13 +102,11 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+.artifacts
 .env
 .venv
-<<<<<<< HEAD
-=======
 myenv.
 myenv/
->>>>>>> a788c13 (setup and requirement v3)
 env/
 venv/
 ENV/
